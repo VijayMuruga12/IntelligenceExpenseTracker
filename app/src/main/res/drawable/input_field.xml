@@ -1,0 +1,8 @@
+<!-- res/drawable/circular_input_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F5F5F5" /> <!-- Grey background color -->
+    <corners android:radius="50dp" /> <!-- Radius to make the border circular -->
+    <stroke
+        android:width="2dp"
+        android:color="#bfbcbb" /> <!-- Optional: Add a stroke (border) -->
+</shape>

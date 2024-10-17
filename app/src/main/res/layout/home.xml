@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#E2E2F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/Appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intelligence Expense Tracker"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingTop="10dp" />
+
+        <!--Home page image -->
+        <ImageView
+            android:id="@+id/homepageimg"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:src="@drawable/homepageimage"
+            android:paddingTop="30dp"/>
+
+        <!-- Title Text -->
+        <TextView
+            android:id="@+id/home_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unlock Smart Savings:An Intelligent Expense Manager!"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingTop="20dp" />
+
+        <!-- Subtitle Text -->
+        <TextView
+            android:id="@+id/home_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save money! The more your money works for you, the less you have to work for money."
+            android:textSize="16sp"
+            android:textColor="#808080"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="20dp"/>
+
+        <!-- Lets start Button -->
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Let's start"
+            android:clickable="true"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:paddingTop="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
