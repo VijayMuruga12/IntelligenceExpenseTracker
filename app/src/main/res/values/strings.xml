@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IntelligenceExpenseTracker</string>
+    <string name="income_format">Total Income: ₹%1$.2f</string>
+    <string name="expense_format">Total Expenses: ₹%1$.2f</string>
+    <string name="balance_format">Balance: ₹%1$.2f</string>
+
 </resources>

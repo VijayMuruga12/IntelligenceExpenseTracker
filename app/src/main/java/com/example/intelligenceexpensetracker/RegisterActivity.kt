@@ -85,7 +85,8 @@ class RegisterActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     val userId = auth.currentUser?.uid
-                    val userObj = User(userId, UserName, email, password)
+                    val financialSummary = FinancialSummary()
+                    val userObj = User(userId, UserName, email, password, financialSummary)
                     userId?.let {
                         database.child("Users").child(it).setValue(userObj)
                             .addOnCompleteListener { dbTask ->

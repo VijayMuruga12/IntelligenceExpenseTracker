@@ -9,16 +9,16 @@ import androidx.appcompat.app.AppCompatActivity
 
 class HomeActivity : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
-    private lateinit var startbutton: Button
+    private lateinit var registerButton: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.home)
-        startbutton = findViewById(R.id.startButton) // loginButton ID from your XML
-//        startbutton.setOnClickListener {
-//
-//            val intent = Intent(this, TransactionActivity::class.java)
-//            startActivity(intent)
-//        }
+        registerButton = findViewById(R.id.startButton) // loginButton ID from your XML
+        registerButton.setOnClickListener {
+            val intent = Intent(this, TransactionActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

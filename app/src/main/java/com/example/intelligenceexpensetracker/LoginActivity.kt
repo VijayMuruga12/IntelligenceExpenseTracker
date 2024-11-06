@@ -43,6 +43,11 @@ class LoginActivity:AppCompatActivity() {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
+        val fpbutton: TextView = findViewById(R.id.forgot_password) // loginButton ID from your XML
+        fpbutton.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+        }
     }
         private fun isValidEmail(email: String): Boolean {
             return Patterns.EMAIL_ADDRESS.matcher(email).matches()

@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.gms.google-services")
+    id ("kotlin-parcelize")
+
 }
 
 android {
@@ -60,6 +62,8 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation("androidx.core:core:1.13.0")
     implementation("androidx.core:core-ktx:1.13.0")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+
 
     // Firebase Bill of Materials
     implementation(platform("com.google.firebase:firebase-bom:32.0.0"))
@@ -69,6 +73,15 @@ dependencies {
     implementation("com.google.firebase:firebase-database-ktx")
     implementation("com.google.android.gms:play-services-auth:20.6.0")
     implementation(libs.firebase.firestore.ktx)
+    implementation(libs.androidx.recyclerview)
+
+//chart dependencies
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+
+    implementation ("androidx.cardview:cardview:1.0.0")
+    implementation(libs.filament.android)
+
 
     // Test dependencies
     testImplementation(libs.junit)

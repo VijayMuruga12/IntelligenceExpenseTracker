@@ -16,65 +16,66 @@
         android:contentDescription="Illustration"
         android:src="@drawable/startingpageimage"
         android:scaleType="centerInside"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
 
     <!--    Caption-->
+
+    <!--    Subtitle-->
     <TextView
         android:id="@+id/caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_italic"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
         android:text="Simplify your Expenses, Amplify your Savings"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="21sp"
-        android:textAlignment="center"
-        android:padding="10dp"
-        android:gravity="center_horizontal"
-        android:textStyle="italic"
-        android:fontFamily="@font/roboto_italic"
-        />
+        android:textStyle="italic" />
 
-    <!--    Subtitle-->
     <TextView
         android:id="@+id/subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Track your spending, control your money. Future wealth begins with today's choices."
-        android:textColor="#772424"
-        android:textSize="17sp"
-        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
         android:padding="10dp"
-        android:gravity="center_horizontal"/>
+        android:text="Track your spending, control your money. Future wealth begins with today's choices."
+        android:textAlignment="center"
+        android:textColor="#772424"
+        android:textSize="17sp" />
 
     <!--    Login button-->
-    <Button
-        android:id="@+id/loginbutton"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_weight="1"
-        android:textColor="#1E88E5"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/outline_button"
-        android:layout_gravity="center_horizontal"
-        android:padding="5dp"/>
 
     <!--    Register button-->
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Login"
+        android:clickable="true"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background" />
+
     <Button
         android:id="@+id/registerbutton"
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:text="Register"
-        android:layout_weight="1"
-        android:textColor="#1E88E5"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/outline_button"
-        android:layout_gravity="center_horizontal"
-        android:padding="5dp"/>
+        android:clickable="true"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background" />
 
 </LinearLayout>
