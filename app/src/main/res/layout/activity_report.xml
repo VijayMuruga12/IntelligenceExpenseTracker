@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/reportTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reports and Analytics"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:padding="16dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- BarChart with 700dp width to show the bars in detail -->
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/incomeVsExpensesChart"
+                android:layout_width="750dp"
+                android:layout_height="220dp"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Export Button aligned horizontally next to BarChart -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <Button
+        android:id="@+id/exportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export Reports"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+</LinearLayout>

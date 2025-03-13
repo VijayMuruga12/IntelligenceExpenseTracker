@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- activity_reports.xml -->
+
+        <TextView
+            android:id="@+id/reportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Reports and Analytics"
+            android:textSize="24sp"
+            android:padding="16dp"/>
+
+        <View
+            android:id="@+id/spendingTrendsChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <View
+            android:id="@+id/categoryBreakdownChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <View
+            android:id="@+id/incomeVsExpensesChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <Button
+            android:id="@+id/exportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export Reports"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
